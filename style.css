@@ -1,290 +1,284 @@
-/* BASIC SETTINGS */
+/* =========================
+   GENERAL
+========================= */
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff8fa;
-    color: #3d292f;
+    background: #fffdf8;
+    color: #29252b;
 }
 
 
-/* NAVIGATION */
+/* =========================
+   NAVBAR
+========================= */
 
-nav {
-    height: 70px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 8%;
-
-    background-color: white;
-
-    position: sticky;
-    top: 0;
+.navbar {
+    background: #fffdf8;
+    padding: 18px;
 }
 
-nav h2 {
-    color: #c76b88;
-    font-size: 28px;
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #29252b;
 }
 
-nav a {
-    text-decoration: none;
-    color: #3d292f;
-    margin-left: 25px;
+.nav-link {
+    color: #29252b;
+    margin-left: 20px;
 }
 
-nav a:hover {
-    color: #c76b88;
+.nav-link:hover {
+    color: #796287;
 }
 
 
-/* HOME */
+/* =========================
+   HERO
+========================= */
 
-.home {
-    min-height: 600px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 60px 8%;
+.hero {
+    background: #e5f2f4;
+    padding: 80px 0;
 }
 
-.home-text {
-    width: 45%;
+.hero h1 {
+    font-size: 65px;
+    font-weight: bold;
 }
 
-.home-text p:first-child {
-    color: #c76b88;
-    letter-spacing: 3px;
+.hero h1 span {
+    color: #d88d70;
 }
 
-.home-text h1 {
-    font-size: 60px;
-    margin: 20px 0;
+.hero p {
+    max-width: 500px;
 }
 
-.home-text p {
-    line-height: 1.7;
-    margin-bottom: 25px;
-}
-
-.button {
-    background-color: #c76b88;
-    color: white;
-
-    padding: 12px 25px;
-
-    border-radius: 25px;
-
-    text-decoration: none;
-}
-
-.button:hover {
-    background-color: #a9506d;
-}
-
-
-/* HOME IMAGE */
-
-.home-image {
-    cursor: pointer;
-    width: 45%;
-}
-
-.home-image img {
+.hero-img {
     width: 100%;
-    height: 480px;
-
+    height: 450px;
     object-fit: cover;
+    border-radius: 40px;
 
-    border-radius: 25px;
+    /* Cursor changes on hero image */
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+.hero-img:hover {
+    transform: scale(1.03);
 }
 
 
-/* PRODUCTS */
+/* =========================
+   COMMON SECTIONS
+========================= */
 
-.products {
-    padding: 90px 8%;
-
-    text-align: center;
-
-    background-color: #fcecef;
+.section {
+    padding: 80px 0;
 }
 
 .heading {
-    color: #c76b88;
-    letter-spacing: 3px;
-    font-size: 13px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.products h2 {
+.heading h2 {
     font-size: 40px;
-    margin: 15px 0 40px;
 }
 
-.product-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+.label {
+    color: #796287;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.product-card {
-    background-color: white;
 
-    width: 30%;
+/* =========================
+   PRODUCT CARDS
+========================= */
 
-    padding-bottom: 25px;
-
-    border-radius: 15px;
-
+.card {
+    border: none;
+    border-radius: 20px;
     overflow: hidden;
+    padding-bottom: 20px;
+    transition: 0.3s;
 }
 
-.product-card img {
-    cursor: pointer;
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #ddd;
+}
+
+
+/* PRODUCT IMAGES */
+
+.card img {
     width: 100%;
-    height: 280px;
-
+    height: 240px;
     object-fit: cover;
+
+    /* Cursor changes when mouse goes on image */
+    cursor: pointer;
+
+    transition: 0.4s;
 }
 
-.product-card h3 {
+
+/* Image changes when cursor is over it */
+
+.card img:hover {
+    transform: scale(1.06);
+}
+
+
+/* PRODUCT TEXT */
+
+.card h3,
+.card p,
+.card b,
+.card button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card h3 {
     margin-top: 20px;
 }
 
-.product-card p {
-    padding: 10px 20px;
-    line-height: 1.5;
-}
-
-.product-card h4 {
-    color: #c76b88;
-    font-size: 20px;
+.card p {
+    color: #777;
 }
 
 
-/* ABOUT */
+/* =========================
+   BUTTONS
+========================= */
 
-.about {
-    min-height: 550px;
-
-    display: flex;
-    align-items: center;
-    gap: 70px;
-
-    padding: 90px 8%;
+button {
+    border: 1px solid #29252b;
+    background: #29252b;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 25px;
 }
 
-.about-image {
-    width: 45%;
+button:hover {
+    background: #796287;
 }
 
-.about-image img {
-    cursor: pointer;
 
-    width: 100%;
-    height: 400px;
+/* =========================
+   EMPOWERMENT
+========================= */
 
-    object-fit: cover;
+.empower {
+    padding: 90px 20px;
+    background: #ddd3ec;
+}
 
+.empower h2 {
+    font-size: 45px;
+}
+
+
+/* =========================
+   MEMBERSHIP
+========================= */
+
+.membership {
+    background: #fff1a8;
+}
+
+.plan {
+    background: white;
+    padding: 35px;
+    text-align: center;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.plan h2 {
+    font-size: 38px;
+}
+
+
+/* POPULAR PLAN */
+
+.popular {
+    border: 3px solid #b9dce3;
+}
+
+.popular small {
+    background: #796287;
+    color: white;
+    padding: 5px 12px;
     border-radius: 20px;
 }
 
-.about-text {
-    width: 45%;
-}
 
-.about-text h2 {
-    font-size: 40px;
-    margin: 15px 0;
-}
-
-.about-text p {
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
-    text-align: center;
-
-    padding: 90px;
-
-    background-color: #fcecef;
+    padding: 80px 20px;
+    background: #f8d8c9;
 }
 
 .contact h2 {
     font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.contact p {
-    margin-bottom: 25px;
-}
-
-input {
-    padding: 12px;
-
-    width: 250px;
-
-    border: 1px solid #ddd;
-
-    border-radius: 20px;
-
-    margin: 5px;
-}
-
-button {
-    padding: 12px 25px;
-
-    border: none;
-
-    border-radius: 20px;
-
-    background-color: #c76b88;
-
-    color: white;
-
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #a9506d;
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    text-align: center;
-
-    padding: 35px;
-
-    background-color: #3d292f;
-
+    background: #29252b;
     color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-footer h3 {
-    color: #f5a8bd;
-    margin-bottom: 10px;
-}
 
-footer p {
-    margin: 7px;
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-img {
+        margin-top: 30px;
+        height: 350px;
+    }
+
+    .empower h2 {
+        font-size: 35px;
+    }
+
 }

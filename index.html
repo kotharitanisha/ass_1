@@ -1,144 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>GlowMuse</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HERFORM | Women's Fitness</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <h2>GlowMuse</h2>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">HERFORM</a>
 
-        <div>
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            ☰
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#essentials">Essentials</a></li>
+                <li><a class="nav-link" href="#membership">Membership</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
-    <!-- Home Section -->
-    <section id="home" class="home">
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row align-items-center">
 
-        <div class="home-text">
-            <p>BEAUTY • SKINCARE • GLOW</p>
+            <div class="col-md-6">
+                <p class="label">WOMEN • STRENGTH • CONFIDENCE</p>
 
-            <h1>Your Skin,<br>Your Glow.</h1>
+                <h1>STRONGER<br><span>EVERY DAY.</span></h1>
 
-            <p>
-                Discover simple skincare products
-                made for your everyday glow.
-            </p>
+                <p>
+                    Fitness essentials made for women
+                    who train with purpose and confidence.
+                </p>
 
-            <a href="#products" class="button">Shop Now</a>
-        </div>
-
-        <div class="home-image">
-            <img src="images/hero.jpg.png" alt="Skincare products">
-        </div>
-
-    </section>
-
-
-    <!-- Products Section -->
-    <section id="products" class="products">
-
-        <p class="heading">OUR COLLECTION</p>
-
-        <h2>Glow Essentials</h2>
-
-        <div class="product-container">
-
-            <div class="product-card">
-                <img src="images/cream.jpg.png" alt="Glow Cream">
-
-                <h3>Glow Cream</h3>
-
-                <p>Hydrating cream for soft glowing skin.</p>
-
-                <h4>₹499</h4>
+                <a href="#essentials" class="btn btn-dark rounded-pill">
+                    Shop Essentials
+                </a>
             </div>
 
-
-            <div class="product-card">
-                <img src="images/serum.jpg.png" alt="Radiance Serum">
-
-                <h3>Radiance Serum</h3>
-
-                <p>Lightweight serum for radiant skin.</p>
-
-                <h4>₹699</h4>
-            </div>
-
-
-            <div class="product-card">
-                <img src="images/mist.jpg.png" alt="Rose Mist">
-
-                <h3>Rose Mist</h3>
-
-                <p>Refreshing mist for an instant glow.</p>
-
-                <h4>₹399</h4>
+            <div class="col-md-6">
+                <img src="images/hero.png" class="hero-img" alt="Fitness">
             </div>
 
         </div>
+    </div>
+</section>
 
-    </section>
 
+<!-- ESSENTIALS -->
+<section id="essentials" class="section">
+    <div class="container">
 
-    <!-- About Section -->
-    <section id="about" class="about">
-
-        <div class="about-image">
-            <img src="images/hero.jpg.png" alt="GlowMuse skincare">
+        <div class="heading">
+            <p class="label">TRAIN YOUR WAY</p>
+            <h2>HERFORM Essentials</h2>
         </div>
 
-        <div class="about-text">
+        <div class="row g-4">
 
-            <p class="heading">ABOUT GLOWMUSE</p>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/weights.png">
+                    <h3>Power Weights</h3>
+                    <p>Strength training dumbbells.</p>
+                    <b>₹1,499</b>
+                    <button>Shop Now</button>
+                </div>
+            </div>
 
-            <h2>Beauty that feels like you.</h2>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/bands.png">
+                    <h3>Resistance Bands</h3>
+                    <p>Perfect for full-body workouts.</p>
+                    <b>₹699</b>
+                    <button>Shop Now</button>
+                </div>
+            </div>
 
-            <p>
-                GlowMuse is a skincare brand created
-                for simple and everyday skincare.
-            </p>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/mat.png">
+                    <h3>Training Mat</h3>
+                    <p>For yoga and floor workouts.</p>
+                    <b>₹999</b>
+                    <button>Shop Now</button>
+                </div>
+            </div>
 
-            <p>
-                Our goal is to make skincare easy,
-                beautiful and accessible.
-            </p>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/protein.png">
+                    <h3>HERFORM Protein</h3>
+                    <p>Protein support for training.</p>
+                    <b>₹1,899</b>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/gloves.png">
+                    <h3>Training Gloves</h3>
+                    <p>Grip and support while lifting.</p>
+                    <b>₹599</b>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/gymbag.png">
+                    <h3>HERFORM Gym Bag</h3>
+                    <p>Carry all your gym essentials.</p>
+                    <b>₹1,299</b>
+                    <button>Shop Now</button>
+                </div>
+            </div>
 
         </div>
-
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-
-        <h2>Stay Glowy ✨</h2>
-
-        <p>Have a question? We'd love to hear from you.</p>
-
-        <input type="text" placeholder="Your Name">
-
-        <input type="email" placeholder="Your Email">
-
-        <button>Send Message</button>
-
-    </section>
+    </div>
+</section>
 
 
-    <!-- Footer -->
-    <footer>
-        <h3>GlowMuse</h3>
-        <p>Glow naturally. Feel confidently.</p>
-        <p>© 2026 GlowMuse</p>
-    </footer>
+<!-- EMPOWERMENT -->
+<section class="empower">
+    <div class="container text-center">
+        <p class="label">THIS IS YOUR STRENGTH</p>
+
+        <h2>Train for strength.<br>Not for approval.</h2>
+
+        <p>Strong looks good on you.</p>
+    </div>
+</section>
+
+
+<!-- MEMBERSHIP -->
+<section id="membership" class="section membership">
+    <div class="container">
+
+        <div class="heading">
+            <p class="label">JOIN HERFORM</p>
+            <h2>Membership Plans</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="plan">
+                    <h3>Monthly</h3>
+                    <h2>₹1,499</h2>
+                    <p>Full Gym Access</p>
+                    <p>Locker Access</p>
+                    <button>Join Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="plan popular">
+                    <small>MOST POPULAR</small>
+                    <h3>Quarterly</h3>
+                    <h2>₹3,999</h2>
+                    <p>Full Gym Access</p>
+                    <p>Group Classes</p>
+                    <button>Join Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="plan">
+                    <h3>Yearly</h3>
+                    <h2>₹11,999</h2>
+                    <p>Full Gym Access</p>
+                    <p>Personal Guidance</p>
+                    <button>Join Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact text-center">
+    <p class="label">READY TO GET STRONGER?</p>
+
+    <h2>Let's Train Together.</h2>
+
+    <p>📍 Nashik, Maharashtra</p>
+    <p>📞 +91 98765 43210</p>
+    <p>✉ hello@herform.com</p>
+
+    <button>Contact Us</button>
+</section>
+
+
+<footer>
+    © 2026 HERFORM | Strong looks good on you.
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
